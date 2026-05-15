@@ -4,6 +4,10 @@
   "description": "Adds KuruKuru sticker, background, and violet theme colors to VS Code.",
   "version": "0.0.1",
   "publisher": "zenny",
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/ZennyFZ/KuruKuru-VSCode-Theme.git"
+  },
   "engines": {
     "vscode": "^1.80.0"
   },
