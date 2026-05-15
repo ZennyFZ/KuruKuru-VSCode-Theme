@@ -1,0 +1,56 @@
+{
+  "name": "kurukuru-vscode",
+  "displayName": "KuruKuru",
+  "description": "Adds KuruKuru sticker, background, and violet theme colors to VS Code.",
+  "version": "0.0.1",
+  "publisher": "zenny",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "kuruKuru.install",
+        "title": "KuruKuru: Install Sticker/Background"
+      },
+      {
+        "command": "kuruKuru.remove",
+        "title": "KuruKuru: Remove Sticker/Background"
+      }
+    ],
+    "configuration": {
+      "title": "KuruKuru",
+      "properties": {
+        "kuruKuru.stickerPath": {
+          "type": "string",
+          "default": "",
+          "description": "Absolute path to sticker image. If empty, uses assets/Sticker.png."
+        },
+        "kuruKuru.wallpaperPath": {
+          "type": "string",
+          "default": "",
+          "description": "Absolute path to background image. If empty, uses assets/Background.png."
+        },
+        "kuruKuru.stickerSize": {
+          "type": "string",
+          "default": "300px",
+          "description": "Sticker width."
+        },
+        "kuruKuru.opacity": {
+          "type": "number",
+          "default": 0.88,
+          "description": "Sticker opacity."
+        },
+        "kuruKuru.backgroundOpacity": {
+          "type": "number",
+          "default": 0.8,
+          "description": "Dark overlay opacity for the editor background. Higher means darker."
+        }
+      }
+    }
+  }
+}
